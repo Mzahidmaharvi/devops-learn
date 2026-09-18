@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Zahid - DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h2 class="logo">ZAHID<span>.DEVOPS</span></h2>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <p class="badge">$ whoami → DevOps Learner</p>
+      <h1>I'm <span>Muhammad Zahid</span><br>Aspiring DevOps Engineer</h1>
+      <p class="desc">Linux | Git & GitHub | Shell Scripting | Docker | AWS S3 & IAM | Focused on Automation, CI/CD & Cloud Infrastructure.</p>
+      <div class="btns">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+      <div class="terminal">
+        <p><span class="green">zahid@devops:~$</span> cat skills.txt</p>
+        <p>> Linux, Bash, Git, GitHub, Docker, S3, IAM, Shell Scripting</p>
+        <p><span class="green">zahid@devops:~$</span> echo "Ready to build & deploy!"</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        Assalam-o-Alaikum! Main <strong>Muhammad Zahid</strong> hun, ek passionate DevOps learner.
+        Maine Linux, Git & GitHub, Shell Scripting, Docker, aur AWS ke core services S3 aur IAM cover kar liye hain.
+        Ab main Docker images/containers bana leta hun aur GitHub par code push karna jaanta hun.
+        Mera goal ek professional DevOps Engineer banna hai jo automation aur cloud infrastructure me expert ho.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section dark">
+    <div class="container">
+      <h2 class="section-title">My DevOps Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>Linux</h3><p>File system, Permissions, Process management</p><div class="bar"><div style="width:85%"></div></div></div>
+        <div class="skill-card"><h3>Git & GitHub</h3><p>Version control, Branching, Push/Pull</p><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill-card"><h3>Shell Scripting</h3><p>Bash automation, Cron jobs</p><div class="bar"><div style="width:80%"></div></div></div>
+        <div class="skill-card"><h3>Docker</h3><p>Images, Containers, Dockerfile, Hub</p><div class="bar"><div style="width:75%"></div></div></div>
+        <div class="skill-card"><h3>AWS S3</h3><p>Bucket creation, Hosting, Storage</p><div class="bar"><div style="width:80%"></div></div></div>
+        <div class="skill-card"><h3>AWS IAM</h3><p>Users, Policies, Roles, Permissions</p><div class="bar"><div style="width:78%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">DevOps Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>01. Dockerized Web App</h3>
+          <p>Ek HTML/CSS/JS app ko Dockerfile likh ke image banai aur container me run kiya.</p>
+          <span class="tags">Docker | Dockerfile | Nginx</span>
+        </div>
+        <div class="card">
+          <h3>02. S3 Static Website Hosting</h3>
+          <p>Portfolio ko AWS S3 bucket par host kiya aur public access configure kiya.</p>
+          <span class="tags">AWS S3 | Static Hosting</span>
+        </div>
+        <div class="card">
+          <h3>03. Shell Script Automation</h3>
+          <p>Backup aur log cleanup ke liye Bash scripts likhe jo automatically kaam karte hain.</p>
+          <span class="tags">Linux | Bash | Cron</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section dark">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-box">
+        <p><strong>Name:</strong> Muhammad Zahid</p>
+        <p><strong>Email:</strong> mz6366048@gmail.com</p>
+        <p><strong>Phone:</strong> 03133274358</p>
+        <p><strong>Focus:</strong> DevOps | Linux | Docker | AWS</p>
+        <div class="contact-btns">
+          <a href="mailto:mz6366048@gmail.com" class="btn primary">Email Me</a>
+          <a href="tel:03133274358" class="btn secondary">Call Me</a>
+        </div>
+      </div>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="msg" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+        <p id="formMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Muhammad Zahid — DevOps Portfolio | Built with HTML, CSS, JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

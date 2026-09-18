@@ -1,0 +1,47 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#fff;line-height:1.6;scroll-behavior:smooth}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+header{position:fixed;top:0;width:100%;background:rgba(10,10,10,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.07);z-index:100}
+.nav{height:70px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;letter-spacing:1px}
+.logo span{color:#00df81}
+nav{display:flex;gap:26px}
+nav a{font-size:13px;color:#aaa;transition:.3s;text-decoration:none}
+nav a:hover{color:#00df81}
+.hero{padding:140px 0 80px}
+.badge{display:inline-block;font-family:'JetBrains Mono',monospace;background:rgba(0,223,129,0.1);border:1px solid rgba(0,223,129,0.2);color:#00df81;padding:6px 14px;border-radius:20px;font-size:12px;margin-bottom:18px}
+.hero h1{font-size:48px;line-height:1.15;font-weight:700}
+.hero h1 span{color:#00df81}
+.desc{color:#aaa;max-width:620px;margin:18px 0 28px;font-size:15px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 26px;border-radius:30px;font-size:14px;font-weight:500;display:inline-block;text-decoration:none;transition:.3s;border:none;cursor:pointer}
+.btn.primary{background:#00df81;color:#000}
+.btn.secondary{border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#fff}
+.terminal{margin-top:40px;background:#111;border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:18px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#ccc;max-width:620px}
+.terminal .green{color:#00df81}
+.section{padding:80px 0}
+.section.dark{background:#111}
+.section-title{text-align:center;font-size:34px;margin-bottom:40px;font-weight:700}
+.about-text{max-width:750px;margin:auto;text-align:center;color:#aaa;font-size:15px;line-height:1.8}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.skill-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:20px}
+.skill-card h3{font-size:16px;margin-bottom:6px;color:#fff}
+.skill-card p{font-size:12px;color:#888;margin-bottom:12px}
+.bar{height:6px;background:rgba(255,255,255,0.08);border-radius:10px;overflow:hidden}
+.bar div{height:100%;background:#00df81;border-radius:10px}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:22px;transition:.3s}
+.card:hover{border-color:rgba(0,223,129,0.3);transform:translateY(-4px)}
+.card h3{font-size:15px;margin-bottom:8px}
+.card p{font-size:13px;color:#aaa;margin-bottom:12px}
+.tags{font-size:11px;font-family:'JetBrains Mono',monospace;color:#00df81;background:rgba(0,223,129,0.08);padding:6px 10px;border-radius:20px;display:inline-block}
+.contact-box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:22px;max-width:500px;margin:0 auto 30px;text-align:left}
+.contact-box p{font-size:14px;margin:8px 0;color:#ccc}
+.contact-btns{margin-top:16px;display:flex;gap:10px}
+form{max-width:500px;margin:auto;display:grid;gap:12px}
+input,textarea{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:13px;color:#fff;outline:none;font-family:inherit}
+textarea{height:110px;resize:none}
+input:focus,textarea:focus{border-color:#00df81}
+#formMsg{font-size:13px;color:#00df81;text-align:center}
+footer{border-top:1px solid rgba(255,255,255,0.06);text-align:center;padding:22px;color:#666;font-size:12px}
+@media(max-width:900px){.skills-grid,.projects-grid{grid-template-columns:1fr}.hero h1{font-size:34px}nav{display:none}}
